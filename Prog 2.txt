@@ -1,0 +1,18 @@
+Write a program take out the average of the 5 subjects marks
+
+import java.util.Scanner;
+
+public class AverageCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0;
+
+        System.out.println("Enter marks of 5 subjects:");
+        for (int i = 0; i < 5; i++) {
+            sum += scanner.nextInt();
+        }
+
+        System.out.println("Average marks: " + (sum / 5.0));
+        scanner.close();
+    }
+}

@@ -1,0 +1,26 @@
+Write a program that prompts the user for 5 integers. Use a loop to iterate through the numbers and keep track of the largest number encountered using conditional statements. Finally, print the second largest number.
+
+import java.util.Scanner;
+
+public class SecondLargestNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+
+        System.out.println("Enter 5 integers:");
+
+        for (int i = 0; i < 5; i++) {
+            int num = scanner.nextInt();
+            if (num > largest) {
+                secondLargest = largest;
+                largest = num;
+            } else if (num > secondLargest && num != largest) {
+                secondLargest = num;
+            }
+        }
+
+        System.out.println("The second largest number is: " + secondLargest);
+        scanner.close();
+    }
+}

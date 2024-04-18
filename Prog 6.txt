@@ -1,0 +1,16 @@
+Write a program to calculate factorial of a number.
+
+
+public class Factorial {
+    public static void main(String[] args) {
+        int num = 5; // Change the value of num to calculate factorial for a different number
+        long factorial = 1;
+        
+        for (int i = 1; i <= num; i++) {
+            factorial *= i;
+        }
+        
+        System.out.println("Factorial of " + num + " is: " + factorial);
+    }
+}
+

@@ -1,0 +1,38 @@
+Write a program to print the variables of different data types.
+
+public class Main {
+    public static void main(String[] args) {
+        // Integer variables
+        int num1 = 10;
+        int num2 = -5;
+        
+        // Floating point variables
+        double decimal1 = 3.14;
+        double decimal2 = -0.5;
+        
+        // Character variables
+        char ch1 = 'A';
+        char ch2 = 'z';
+        
+        // Boolean variables
+        boolean bool1 = true;
+        boolean bool2 = false;
+        
+        // Print the variables
+        System.out.println("Integer variables:");
+        System.out.println("num1: " + num1);
+        System.out.println("num2: " + num2);
+        
+        System.out.println("\nFloating point variables:");
+        System.out.println("decimal1: " + decimal1);
+        System.out.println("decimal2: " + decimal2);
+        
+        System.out.println("\nCharacter variables:");
+        System.out.println("ch1: " + ch1);
+        System.out.println("ch2: " + ch2);
+        
+        System.out.println("\nBoolean variables:");
+        System.out.println("bool1: " + bool1);
+        System.out.println("bool2: " + bool2);
+    }
+}
